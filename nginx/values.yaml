@@ -1,8 +1,8 @@
-## Global chart image registry
-## Please, note that this registry would be used for all the containers in the chart and dependencies
+## Global Docker image registry
+## Please, note that this will override the image registry for all the images, including dependencies, configured to use the global value
 ##
 # global:
-#   registry:
+#   imageRegistry:
 
 ## Bitnami NGINX image version
 ## ref: https://hub.docker.com/r/bitnami/nginx/tags/
@@ -10,7 +10,7 @@
 image:
   registry: docker.io
   repository: bitnami/nginx
-  tag: 1.14.0-debian-9
+  tag: 1.14.0
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
   ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
