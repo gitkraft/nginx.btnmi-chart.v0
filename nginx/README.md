@@ -20,7 +20,7 @@ Bitnami charts can be used with [Kubeapps](https://kubeapps.com/) for deployment
 ## Prerequisites
 
 - Kubernetes 1.12+
-- Helm 3.0-beta3+
+- Helm 3.1.0
 
 ## Installing the Chart
 
@@ -121,6 +121,7 @@ The following tables lists the configurable parameters of the NGINX chart and th
 | `extraVolumes`              | Array to add extra volumes                                                                | `[]` (evaluated as a template) |
 | `extraVolumeMounts`         | Array to add extra mount                                                                  | `[]` (evaluated as a template) |
 | `sidecars`                  | Attach additional containers to nginx pods                                                | `nil`                          |
+| `initContainers`       | Additional init containers (this value is evaluated as a template)                        | `[]`                           |
 
 ### Custom NGINX application parameters
 
